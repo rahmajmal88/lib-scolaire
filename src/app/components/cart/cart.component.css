@@ -1,0 +1,8 @@
+/* src/app/components/cart/cart.component.css */
+.card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.input-group input {
+  max-width: 60px;
+}

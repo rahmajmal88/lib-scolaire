@@ -1,0 +1,123 @@
+<!-- src/app/components/admin/orders-list/orders-list.component.html -->
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title mb-4">
+      <i class="bi bi-list-check"></i> Liste des Commandes
+    </h5>
+
+    <div *ngIf="orders.length === 0" class="alert alert-info text-center">
+      <i class="bi bi-inbox"></i> Aucune commande trouvée.
+    </div>
+
+    <div class="table-responsive" *ngIf="orders.length > 0">
+      <table class="table table-hover">
+        <thead class="table-light">
+          <tr>
+            <th>ID</th>
+            <th>Client</th>
+            <th>Email</th>
+            <th>Téléphone</th>
+            <th>Date</th>
+            <th>Produits</th>
+            <th>Total</th>
+            <th>Statut</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of orders">
+            <td><strong>#{{ order.id }}</strong></td>
+            <td>{{ order.username }}</td>
+            <td>{{ order.email }}</td>
+            <td>{{ order.phone }}</td>
+            <td>{{ formatDate(order.date) }}</td>
+            <td>
+              <button 
+                class="btn btn-sm btn-outline-info" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                [attr.data-bs-target]="'#order-' + order.id">
+                <i class="bi bi-eye"></i> Voir ({{ order.items.length }})
+              </button>
+              <div class="collapse mt-2" [id]="'order-' + order.id">
+                <div class="card card-body small">
+                  <ul class="list-unstyled mb-0">
+                    <li *ngFor="let item of order.items">
+                      <strong>{{ item.productName }}</strong> 
+                      x{{ item.quantity }} 
+                      = {{ item.price * item.quantity }} TND
+                    </li>
+                  </ul>
+                  <hr class="my-2">
+                  <div><strong>Adresse:</strong> {{ order.address }}</div>
+                </div>
+              </div>
+            </td>
+            <td><strong class="text-primary">{{ order.total }} TND</strong></td>
+            <td>
+              <div class="dropdown">
+                <button 
+                  class="btn btn-sm dropdown-toggle" 
+                  [ngClass]="getStatusBadgeClass(order.status)"
+                  type="button" 
+                  [id]="'statusDropdown-' + order.id"
+                  data-bs-toggle="dropdown">
+                  {{ order.status }}
+                </button>
+                <ul class="dropdown-menu" [attr.aria-labelledby]="'statusDropdown-' + order.id">
+                  <li *ngFor="let status of availableStatuses">
+                    <a 
+                      class="dropdown-item" 
+                      (click)="changeOrderStatus(order, status)"
+                      [class.active]="order.status === status">
+                      {{ status }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group-vertical btn-group-sm" role="group">
+                <!-- Bouton Confirmer + Email -->
+                <button 
+                  class="btn btn-success mb-1" 
+                  (click)="confirmOrderAndSendEmail(order)"
+                  [disabled]="isUpdatingStatus[order.id!] || order.status === 'Confirmée'"
+                  title="Confirmer la commande et envoyer un email">
+                  <span *ngIf="!isUpdatingStatus[order.id!]">
+                    <i class="bi bi-check-circle"></i> Confirmer
+                  </span>
+                  <span *ngIf="isUpdatingStatus[order.id!]">
+                    <span class="spinner-border spinner-border-sm"></span>
+                  </span>
+                </button>
+
+                <!-- Bouton Envoyer Email -->
+                <button 
+                  class="btn btn-info mb-1" 
+                  (click)="sendConfirmationEmail(order)"
+                  [disabled]="isSendingEmail[order.id!]"
+                  title="Envoyer un email de confirmation">
+                  <span *ngIf="!isSendingEmail[order.id!]">
+                    <i class="bi bi-envelope"></i> Email
+                  </span>
+                  <span *ngIf="isSendingEmail[order.id!]">
+                    <span class="spinner-border spinner-border-sm"></span>
+                  </span>
+                </button>
+
+                <!-- Bouton Supprimer -->
+                <button 
+                  class="btn btn-danger" 
+                  (click)="deleteOrder(order.id!)"
+                  title="Supprimer la commande">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

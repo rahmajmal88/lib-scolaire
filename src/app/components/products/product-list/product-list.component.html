@@ -1,0 +1,44 @@
+<!-- src/app/components/products/product-list/product-list.component.html -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Nos Produits</h2>
+
+  <!-- Filtres -->
+  <div class="row mb-4">
+    <div class="col-md-8">
+      <div class="btn-group" role="group">
+        <button 
+          *ngFor="let cat of categories"
+          type="button" 
+          class="btn"
+          [class.btn-primary]="selectedCategory === cat"
+          [class.btn-outline-primary]="selectedCategory !== cat"
+          (click)="filterByCategory(cat)">
+          {{ cat }}
+        </button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Rechercher un produit..."
+        [(ngModel)]="searchTerm"
+        (input)="onSearchChange()">
+    </div>
+  </div>
+
+  <!-- Liste des produits -->
+  <div class="row g-4" *ngIf="filteredProducts.length > 0">
+    <div class="col-md-3 col-sm-6" *ngFor="let product of filteredProducts">
+      <app-product-card 
+        [product]="product"
+        (addToCartEvent)="addToCart($event)">
+      </app-product-card>
+    </div>
+  </div>
+
+  <!-- Message si aucun produit -->
+  <div class="alert alert-info text-center" *ngIf="filteredProducts.length === 0">
+    <i class="bi bi-info-circle"></i> Aucun produit trouvé.
+  </div>
+</div>

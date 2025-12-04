@@ -1,0 +1,65 @@
+<!-- src/app/components/admin/admin-dashboard/admin-dashboard.component.html -->
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="bi bi-speedometer2"></i> Tableau de bord Admin</h2>
+    <button class="btn btn-primary" (click)="loadOrders()">
+      <i class="bi bi-arrow-clockwise"></i> Actualiser
+    </button>
+  </div>
+
+  <!-- Statistiques -->
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <div class="card stat-card bg-primary text-white">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h6 class="text-uppercase">Total Commandes</h6>
+              <h2 class="mb-0">{{ getOrderCount() }}</h2>
+            </div>
+            <i class="bi bi-cart-check stat-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card stat-card bg-success text-white">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h6 class="text-uppercase">Revenu Total</h6>
+              <h2 class="mb-0">{{ getTotalRevenue() }} TND</h2>
+            </div>
+            <i class="bi bi-currency-dollar stat-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recherche -->
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Rechercher par nom, email ou ID..."
+        [(ngModel)]="searchTerm"
+        (input)="onSearchChange()">
+    </div>
+  </div>
+
+  <!-- Chargement -->
+  <div class="text-center my-5" *ngIf="isLoading">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Chargement...</span>
+    </div>
+  </div>
+
+  <!-- Liste des commandes avec event binding -->
+  <app-orders-list 
+    [orders]="filteredOrders" 
+    (orderUpdated)="onOrderUpdated()"
+    *ngIf="!isLoading">
+  </app-orders-list>
+</div>

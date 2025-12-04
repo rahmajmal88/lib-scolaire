@@ -1,0 +1,396 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Stylo Bleu BIC",
+      "category": "stylos",
+      "price": 1.5,
+      "image": "data:image/jpeg;base64,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",
+      "stock": 100
+    },
+    {
+      "id": "2",
+      "name": "Stylo Rouge BIC",
+      "category": "stylos",
+      "price": 1.5,
+      "image": "data:image/jpeg;base64,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",
+      "stock": 80
+    },
+    {
+      "id": "3",
+      "name": "Stylo Noir BIC",
+      "category": "stylos",
+      "price": 1.5,
+      "image": "data:image/jpeg;base64,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",
+      "stock": 80
+    },
+    {
+      "id": "4",
+      "name": "pack stylo BIC",
+      "category": "stylos",
+      "price": 7,
+      "image": "https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/p/a/pack-de-10-stylo-bic-cristal-4-medium-6-fashion-couleurs-assorties-9004863.jpg",
+      "stock": 80
+    },
+    {
+      "id": "5",
+      "name": "Stylo Bleu pilot",
+      "category": "stylos",
+      "price": 2,
+      "image": "https://www.librairie-hiba.com/wp-content/uploads/2024/03/Stylo-Pilot-G2-bleu.jpg",
+      "stock": 80
+    },
+    {
+      "id": "6",
+      "name": "Stylo vert pilot",
+      "category": "stylos",
+      "price": 2,
+      "image": "data:image/jpeg;base64,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",
+      "stock": 2
+    },
+    {
+      "id": "7",
+      "name": "pack stylo Pilot",
+      "category": "stylos",
+      "price": 2,
+      "image": "https://i5.walmartimages.com/seo/Pilot-G2-Gel-Ink-Pens-Fine-Point-0-7mm-Asst-10-Pack-532885838_85b32b6c-7579-4b90-9f49-853c76a2b6eb_1.95641fdc6f65b0cb6e23c20fac1a1204.jpeg",
+      "stock": 80
+    },
+    {
+      "id": "8",
+      "name": "Stylo Pointe Fine ",
+      "category": "stylos",
+      "price": 10,
+      "image": "https://www.rayart.com.tn/1431-large_default/stylo-feutre-pointe-fine-pochette-de-30-stylos-feutres-dont-5-couleurs-fluo-stabilo-pointe-88.jpg",
+      "stock": 80
+    },
+    {
+      "id": "9",
+      "name": "Crayon a mine",
+      "category": "stylos",
+      "price": 2,
+      "image": "https://www.agrafe.tn/12660-large_default/crayon-noir-graphites-b1-maped.jpg",
+      "stock": 80
+    },
+    {
+      "id": "10",
+      "name": "Correcteur",
+      "category": "stylos",
+      "price": 1.5,
+      "image": "data:image/jpeg;base64,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",
+      "stock": 80
+    },
+    {
+      "id": "11",
+      "name": "Cahier 96 Pages A4",
+      "category": "cahiers",
+      "price": 4.2,
+      "image": "https://www.purple.tn/wp-content/uploads/2024/08/P96-01.png",
+      "stock": 50
+    },
+    {
+      "id": "12",
+      "name": "Cahier 192 Pages A4",
+      "category": "cahiers",
+      "price": 7,
+      "image": "https://www.tunisianet.com.tn/42261-large/cahier-pique-selecta-a4-192-pages-5x5.jpg",
+      "stock": 50
+    },
+    {
+      "id": "13",
+      "name": "Cahier 480 Pages A4",
+      "category": "cahiers",
+      "price": 11,
+      "image": "https://www.alkirtas.com/94172-large_default/cahier-brochure-fantaisie-a4-480-pages-selecta.jpg",
+      "stock": 50
+    },
+    {
+      "id": "14",
+      "name": "Cahier avec ressort 48 Pages A4",
+      "category": "cahiers",
+      "price": 9,
+      "image": "https://www.agrafe.tn/img/c/249.jpg",
+      "stock": 50
+    },
+    {
+      "id": "15",
+      "name": "Cahier avec ressort 400 Pages A4",
+      "category": "cahiers",
+      "price": 13,
+      "image": "https://spacenet.tn/230627-large_default/cahier-wiro-ko-400-pages-grand-modele.jpg",
+      "stock": 0
+    },
+    {
+      "id": "16",
+      "name": "Cahier travaux pratiques Ressort ",
+      "category": "cahiers",
+      "price": 20,
+      "image": "https://www.carrefour.tn/media/catalog/product/6/1/6194013858537.webp",
+      "stock": 50
+    },
+    {
+      "id": "17",
+      "name": "Cahier TP Pique 96 Pages ",
+      "category": "cahiers",
+      "price": 17,
+      "image": "https://agora.tn/fr/45527-large_default/cahier-tp-pique-96p-gm-bmv-sys-80g-yamama.jpg",
+      "stock": 50
+    },
+    {
+      "id": "18",
+      "name": "Cahier Mussique",
+      "category": "cahiers",
+      "price": 3,
+      "image": "https://www.alarabia.com.tn/25117-product_zoom/cahier-musique-et-chant-alarabia.jpg",
+      "stock": 50
+    },
+    {
+      "id": "19",
+      "name": "cahhier de classe",
+      "category": "cahiers",
+      "price": 3,
+      "image": "https://www.sotefi-selecta.com/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/f/f/ff28020.png",
+      "stock": 50
+    },
+    {
+      "id": "20",
+      "name": "Cahier Piqué De Récitation",
+      "category": "cahiers",
+      "price": 3,
+      "image": "https://www.alkirtas.com/93754-large_default/cahier-piqu%C3%A9-de-r%C3%A9citation-17x22-samara.jpg",
+      "stock": 50
+    },
+    {
+      "id": "21",
+      "name": "CAHIER 288PAGES COUSU COLLE HILLAL",
+      "category": "cahiers",
+      "price": 3,
+      "image": "https://www.papeteriesarah.com/wp-content/uploads/2020/12/DSC_0020-removebg-preview.png",
+      "stock": 50
+    },
+    {
+      "id": "22",
+      "name": "Livre de Mathématiques bac technique",
+      "category": "livres",
+      "price": 25,
+      "image": "https://www.librairie-hiba.com/wp-content/uploads/2024/04/math-bac-technique.jpg",
+      "stock": 30
+    },
+    {
+      "id": "23",
+      "name": "Livre d'option allmand bac",
+      "category": "livres",
+      "price": 25,
+      "image": "https://www.librairie-hiba.com/wp-content/uploads/2024/04/allmand_4eme_1.webp",
+      "stock": 30
+    },
+    {
+      "id": "24",
+      "name": "Parascolaire YAMAMA Jisr El Najeh Sixième année",
+      "category": "livres",
+      "price": 25,
+      "image": "https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/p/a/parascolaire_yamama_jisr_el_najeh_sixi_me_ann_e_-_toutes_les_mati_res.jpg",
+      "stock": 30
+    },
+    {
+      "id": "25",
+      "name": "Parascolaire Anisi 8éme année",
+      "category": "livres",
+      "price": 25,
+      "image": "https://www.libris.com.tn/4599-home_default/%D8%A3%D9%86%D9%8A%D8%B3%D9%8A-%D9%81%D9%8A-%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%D9%8A-%D8%AB%D8%A7%D9%85%D9%86%D8%A9-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A-%D8%AB%D9%84%D8%A7%D8%AB%D9%8A-%D8%AB%D8%A7%D9%86%D9%8A.jpg",
+      "stock": 30
+    },
+    {
+      "id": "26",
+      "name": "Je réussis mon entrée en prépa (prepa scientifique)",
+      "category": "livres",
+      "price": 25,
+      "image": "https://www.culturel.tn/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9782311214888-475x500-1_2.jpg",
+      "stock": 30
+    },
+    {
+      "id": "27",
+      "name": "Livres Scolaires 7 ème Année",
+      "category": "livres",
+      "price": 25,
+      "image": "https://www.alkirtas.com/128437-thickbox_default/livres-scolaires-7-%C3%A8me-ann%C3%A9e-de-base.jpg",
+      "stock": 30
+    },
+    {
+      "id": "28",
+      "name": "Livres Scolaires - 1ère Année secondaire",
+      "category": "livres",
+      "price": 80,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmNn7r6upedtUAEbs-r2_RV1ka_cj62TqUDw&s",
+      "stock": 30
+    },
+    {
+      "id": "29",
+      "name": "Pack complet Bac Economie",
+      "category": "livres",
+      "price": 170,
+      "image": "https://cloudtiktak.com/media/static/media/pack-bac-eco.webp",
+      "stock": 30
+    },
+    {
+      "id": "30",
+      "name": "Pack complet Bac Sciences",
+      "category": "livres",
+      "price": 180,
+      "image": "https://www.bac.org.tn/wp-content/uploads/2025/10/Capture.png",
+      "stock": 30
+    },
+    {
+      "id": "31",
+      "name": "Gomme Blanche",
+      "category": "fournitures",
+      "price": 0.8,
+      "image": "https://www.libris.com.tn/4529-large_default/gomme-blanche-technic.jpg",
+      "stock": 200
+    },
+    {
+      "id": "32",
+      "name": "Règle 30cm",
+      "category": "fournitures",
+      "price": 1.2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqYI7xAOMseYtvzgHxUHMwXvHpQ6KIrjkOGA&s",
+      "stock": 150
+    },
+    {
+      "id": "33",
+      "name": "Ciseaux",
+      "category": "fournitures",
+      "price": 3.5,
+      "image": "https://www.carrefour.tn/media/catalog/product/6/1/6194038631474.webp",
+      "stock": 60
+    },
+    {
+      "id": "34",
+      "name": "Trousse Scolaire (garçon)",
+      "category": "fournitures",
+      "price": 8,
+      "image": "https://spacenet.tn/295211-large_default/trousse-scolaire-must-team-dino-bleu.jpg",
+      "stock": 45
+    },
+    {
+      "id": "35",
+      "name": "Trousse Scolaire (fille)",
+      "category": "fournitures",
+      "price": 8,
+      "image": "https://spacenet.tn/295200-large_default/trousse-scolaire-must-team-sweet-dream-rose.jpg",
+      "stock": 45
+    },
+    {
+      "id": "36",
+      "name": "Trousse Scolaire ",
+      "category": "fournitures",
+      "price": 8,
+      "image": "https://www.cdiscount.com/pdt2/6/0/2/4/300x300/auc3666311000602/rw/bagtrotter-trousse-scolaire-ovale-plumier-offshore.jpg",
+      "stock": 45
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "email": "admin@librarie.com"
+    },
+    {
+      "id": "2",
+      "username": "client1",
+      "password": "client123",
+      "role": "user",
+      "email": "client1@email.com"
+    }
+  ],
+  "orders": [
+    {
+      "id": "b32d",
+      "userId": "1",
+      "username": "yesmine",
+      "email": "yesmineghorbel16@gmail.com",
+      "phone": "50831500",
+      "address": "rue mahdia km9",
+      "items": [
+        {
+          "productId": "6",
+          "productName": "Livre de Français",
+          "quantity": 1,
+          "price": 22
+        },
+        {
+          "productId": "5",
+          "productName": "Livre de Mathématiques",
+          "quantity": 1,
+          "price": 25
+        },
+        {
+          "productId": "2",
+          "productName": "Stylo Noir Pilot",
+          "quantity": 1,
+          "price": 2
+        },
+        {
+          "productId": "1",
+          "productName": "Stylo Bleu BIC",
+          "quantity": 1,
+          "price": 1.5
+        }
+      ],
+      "total": 50.5,
+      "date": "2025-12-04T17:51:19.721Z",
+      "status": "Confirmée"
+    },
+    {
+      "id": "9e7d",
+      "userId": 0,
+      "username": "hamza",
+      "email": "dabbechhamza51@gmail.com",
+      "phone": "52455432",
+      "address": "route tunis km9",
+      "items": [
+        {
+          "productId": "1",
+          "productName": "Stylo Bleu BIC",
+          "quantity": 4,
+          "price": 1.5
+        },
+        {
+          "productId": "7",
+          "productName": "pack stylo Pilot",
+          "quantity": 1,
+          "price": 2
+        },
+        {
+          "productId": "10",
+          "productName": "Correcteur",
+          "quantity": 1,
+          "price": 1.5
+        },
+        {
+          "productId": "27",
+          "productName": "Livres Scolaires 7 ème Année",
+          "quantity": 1,
+          "price": 25
+        },
+        {
+          "productId": "29",
+          "productName": "Pack complet Bac Economie",
+          "quantity": 1,
+          "price": 170
+        },
+        {
+          "productId": "36",
+          "productName": "Trousse Scolaire ",
+          "quantity": 1,
+          "price": 8
+        }
+      ],
+      "total": 212.5,
+      "date": "2025-12-04T19:35:21.958Z",
+      "status": "Confirmée"
+    }
+  ]
+}

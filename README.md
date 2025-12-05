@@ -426,10 +426,9 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## 👨‍💻 Auteur
 
-**Votre Nom**
-- GitHub: [@votre-username](https://github.com/votre-username)
-- LinkedIn: [Votre Profil](https://linkedin.com/in/votre-profil)
-- Email: votre.email@example.com
+
+- GitHub: [@votre-username](https://github.com//Hamza833)
+- Email: dabbechhamza51.email@example.com
 
 ---
 
@@ -442,14 +441,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ---
 
-## 📊 Statistiques du Projet
 
-![GitHub stars](https://img.shields.io/github/stars/votre-username/librarie-scolaire?style=social)
-![GitHub forks](https://img.shields.io/github/forks/votre-username/librarie-scolaire?style=social)
-![GitHub issues](https://img.shields.io/github/issues/votre-username/librarie-scolaire)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/votre-username/librarie-scolaire)
-
----
 
 <div align="center">
   <p>Fait avec ❤️ en Tunisie</p>

@@ -427,8 +427,8 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ## 👨‍💻 Auteur
 
 
-- GitHub: [@/Hamza833](https://github.com//Hamza833)
-- Email: dabbechhamza51.email@example.com
+- GitHub: [@/rahmajmal88](https://github.com/rahmajmal88/)
+- Email: jmalrahma369@gmail.com
 
 ---
 
